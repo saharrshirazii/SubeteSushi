@@ -11,18 +11,21 @@
   --clr-primary-8: hsl(205, 86%, 81%);
   --clr-primary-9: hsl(205, 90%, 88%);
   --clr-primary-10: hsl(205, 100%, 96%);
-  /* darkest grey - used for headings */
-  --clr-grey-1: hsl(209, 61%, 16%);
-  --clr-grey-2: hsl(211, 39%, 23%);
-  --clr-grey-3: #1A2A80;
-  --clr-grey-4: hsl(209, 28%, 39%);
-  /* grey used for paragraphs */
-  --clr-grey-5: hsl(210, 22%, 49%);
-  --clr-grey-6: hsl(209, 23%, 60%);
-  --clr-grey-7: hsl(211, 27%, 70%);
-  --clr-grey-8: hsl(210, 31%, 80%);
-  --clr-grey-9: hsl(212, 33%, 89%);
-  --clr-grey-10: hsl(210, 36%, 96%);
+  /*grey*/
+  --clr-grey-1: #040404;
+  --clr-grey-2: #0e0e0e;
+  --clr-grey-3: #1a1a1a;
+  --clr-grey-4: #212121;
+  --clr-grey-5: #2b2b2b;
+  --clr-grey-6: #333333;
+  --clr-grey-7: #3d3d3d;
+  --clr-grey-8: #454545;
+  --clr-grey-9: #4f4f4f;
+  --clr-grey-10: #5b5b5b;
+  --clr-grey-11: #676767;
+  --clr-grey-12: #818181;
+  --clr-grey-13: #b6b4b4;
+  --clr-grey-14: #e6e6e6;
   /* orange */
   --clr-orange-1: hsl(25, 98%, 40%);
     --clr-orange-2: hsl(25, 97%, 50%);
@@ -52,4 +55,14 @@
   --max-width: 1170px;
   --fixed-width: 620px;
   --font-family: 'Arial', sans-serif;
+
+  /* padding */
+  --padding-small: 10px;
+  --padding-medium: 30px;
+  --padding-large: 50px;
+
+/* radius */
+  --radius-small: 5px;
+  --radius-medium: 10px;
+  --radius-large: 15px;
 }

@@ -7,7 +7,7 @@
 .section-center {
   width: 90vw;
   margin: 0 auto;
-  max-width: 1170px;
+  /* max-width: 1170px; */
   display: grid;
   gap: 3rem 2rem;
   justify-items: center;
@@ -17,15 +17,18 @@
   display: grid;
   gap: 1rem 2rem;
   max-width: 25rem;
-  background: #e3e2e2;
-  border-radius: 5px;
-  padding: 10px;
+  background:var(--clr-grey-14);
+  border-radius: var(--radius-medium);
+  padding: var(--padding-small);
+  box-shadow: var(--clr-grey-14);
+  box-shadow: inset;
 }
 .photo {
   object-fit: cover;
   height: 200px;
   border: 1px solid orange;
-  border-radius: 5px;
+  border-radius: var(--radius-small);
+  margin: 0 auto;
 }
 .photo :hover{
   transform: scale(1.01);
@@ -33,7 +36,7 @@
 }
 .item-info {
   text-align: left;
-  padding-left: 10px;
+  padding-left: var(--padding-large);
 }
 .item-info div {
   display: flex;
@@ -44,7 +47,7 @@
   margin-bottom: 0.5rem;
 }
 .price {
-  color: var(--clr-gold);
+  color: var(--clr-orange-1);
 }
 .item-text {
   margin-bottom: 0;
@@ -55,7 +58,8 @@
   .menu-item {
     grid-template-columns: 225px 1fr;
     gap: 0 1.25rem;
-    max-width: 40rem;
+    width: 640px;
+    max-width: 640px;
   }
   .photo {
     height: 175px;
@@ -90,10 +94,16 @@
 .filter-btn:hover {
   background: rgb(243, 242, 242);
   color: #000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
 }
 .filter-btn.active {
   background: #3E3F29;
   color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.filter-btn:focus {
+  background-color: var(--clr-orange-1);
+  outline: none;
+  border: none;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }

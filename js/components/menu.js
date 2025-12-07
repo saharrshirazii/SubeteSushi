@@ -73,21 +73,104 @@ const recipes = [
     title: "15 Piece Sushi",
     category: "Nigiri and Maki",
     price: 190,
-    img: "img/item-08.jpeg",
+    img: "img/15PieceSushi.jpg",
     desc: `4 salmon, 2 shirimp, 1 tuna, 1 gunkan, 1 unagi, 1 trout, 5 maki rolls.`
   },
+
   {
     id: 9,
-    title: "Tiramisu",
-    category: "Dessert",
-    price: 25,
-    img: "img/item-09.jpeg",
-    desc: `Classic Italian dessert made with layers of coffee-soaked ladyfingers and mascarpone cheese.`
+    title: "10 Piece Seared Salmon",
+    category: "Nigiri/ Flambeed Nigiri",
+    price: 160,
+    img: "img/10PieceSearedSalmon.jpg",
+    desc: `Lightly grilled salmon and chili mayonnaise.`
+  },
+
+  {
+    id: 10,
+    title: "Single Nigiri",
+    category: "Nigiri/ Flambeed Nigiri",
+    price: 20,
+    img: "img/SingleNigiri.jpg",
+    desc: ``
+  },
+
+  {
+    id: 11,
+    title: "10 Piece Nigiri",
+    category: "Nigiri/ Flambeed Nigiri",
+    price: 150,
+    img: "img/10PieceNigiri.jpg",
+    desc: `5 salmon, 5 avocado.`
+  },
+
+  {
+    id: 12,
+    title: "10 Piece Nigiri",
+    category: "Nigiri/ Flambeed Nigiri",
+    price: 150,
+    img: "img/10PieceNigiri2.jpg",
+    desc: `10 salmon.`
+  },
+
+  {
+    id: 13,
+    title: "Tempura Shrimp 6 pcs",
+    category: "Appetizers",
+    price: 60,
+    img: "img/TempuraShrimp6pcs.jpg",
+    desc: ``
+  },
+
+  {
+    id: 14,
+    title: "Temaki",
+    category: "Appetizers",
+    price: 65,
+    img: "img/Temaki.jpg",
+    desc: `Fried shrimp/Tuna/Salmon/Vegetarian, Avocado, Chives, Cucumber.`
+  },
+
+  {
+    id: 15,
+    title: "Karaago",
+    category: "Appetizers",
+    price: 60,
+    img: "img/Karaago.jpg",
+    desc: ``
+  },
+
+  {
+    id: 16,
+    title: "Kimch Salad",
+    category: "Appetizers",
+    price: 60,
+    img: "img/KimchSalad.jpg",
+    desc: ``
+  },
+
+   {
+    id: 17,
+    title: "Miso Soup",
+    category: "Appetizers",
+    price: 20,
+    img: "img/MisoSoup.jpg",
+    desc: ``
+  },
+
+  {
+    id: 18,
+    title: "Edamame",
+    category: "Appetizers",
+    price: 50,
+    img: "img/Edamame.jpg",
+    desc: ``
   },
   
 ]
 
 const sectionCenter = document.querySelector(".section-center");
+
 
 const filterBtns = document.querySelectorAll(".filter-btn");
 
@@ -95,22 +178,25 @@ const filterBtns = document.querySelectorAll(".filter-btn");
 window.addEventListener("DOMContentLoaded", function(){
   displayMenuItems(recipes);
 });
+
 // filter buttons
-filterBtns.forEach(function(btn){
-  btn.addEventListener("click", function(e){
-    const category = e.currentTarget.dataset.id;
-    const menuCategory = recipes.filter(function(menuItem){
-    if(menuItem.category === category){
-      return menuItem;
-    }
-  });
-    if(category === "all"){
-      displayMenuItems(recipes);
-    } else {
+if (filterBtns && filterBtns.length > 0) {
+  filterBtns.forEach(function(btn){
+    btn.addEventListener("click", function(e){
+      const category = (e.currentTarget.dataset.id || '').trim();
+      const normalizedCategory = category.toLowerCase();
+      if (normalizedCategory === "all"){
+        displayMenuItems(recipes);
+        return;
+      }
+      const menuCategory = recipes.filter(function(menuItem){
+        const itemCat = (menuItem.category || '').toString().trim().toLowerCase();
+        return itemCat === normalizedCategory;
+      });
       displayMenuItems(menuCategory);
-    }
-});
-});
+    });
+  });
+}
 
 
 function displayMenuItems(menuItems){
