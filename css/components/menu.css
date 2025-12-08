@@ -2,7 +2,7 @@
 .title {
   margin-bottom: 2rem;
   text-align: center;
-  color: #D97D55;
+  color: var(--clr-orange-1);
 }
 .section-center {
   width: 90vw;
@@ -22,11 +22,16 @@
   padding: var(--padding-small);
   box-shadow: var(--clr-grey-14);
   box-shadow: inset;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.menu-item:hover {
+ 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 .photo {
   object-fit: cover;
   height: 200px;
-  border: 1px solid orange;
+  border: 1px solid var(--clr-grey-13);
   border-radius: var(--radius-small);
   margin: 0 auto;
 }
@@ -81,7 +86,7 @@
 .filter-btn {
   background: transparent;
   border-color: transparent;
-  font-size: 1.25rem;
+  font-size: 1rem;
   text-transform: capitalize;
   margin: 0 0.5rem;
   color: var(--clr-dark);

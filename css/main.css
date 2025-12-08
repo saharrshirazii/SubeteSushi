@@ -46,13 +46,9 @@ a {
     line-height: 1;
   }
 }
-/*
-=============== 
-Navbar
-===============
-*/
+/*Navbar*/
 nav {
-  background: var(--clr-white);
+  background-color: var(--clr-white);
   box-shadow: var(--light-shadow);
 }
 .nav-header {
@@ -63,14 +59,14 @@ nav {
 }
 .nav-toggle {
   font-size: 1.5rem;
-  color: #1A2A80;
+  color: var(--clr-orange-1);
   background: transparent;
   border-color: transparent;
   transition: var(--transition);
   cursor: pointer;
 }
 .nav-toggle:hover {
-  color: #7A85C1;
+  color: var(--clr-grey-12);
   transform: rotate(90deg);
 }
 .logo {
@@ -92,7 +88,7 @@ nav {
 }
 .menu-links a:hover {
   background: #fff;
-  color: var(--clr-orange-2);
+  color: var(--clr-grey-12);
   padding-left: 1.5rem;
 }
 .show-links {
@@ -124,7 +120,7 @@ nav {
   .menu-links a:hover {
     padding: 0;
     background: transparent;
-    color: #7A85C1;
+    color: var(--clr-grey-12);
     font-size: 1.05rem;
   }
   
