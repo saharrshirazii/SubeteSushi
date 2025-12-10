@@ -14,19 +14,22 @@
         <div class="nav-center">
             <!--nav Header-->
             <div class="nav-header">
-                <img src="img/Logo.png" class="logo"/>
+              <div class="logo">
+                <img src="img/New-logo.jpg" class="logo-img"/>
+                <div class="logo-text">Subete Sushi</div>
+              </div>
                 <button class="nav-toggle">
-                <i class="fas fa-bars"></i>
-
-            
+                  <i class="fas fa-bars"></i>
                 </button>
             </div>
             <!--Links-->
             <ul class="menu-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="projects.html">Products</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+
             </ul>
             <!--Social Media-->
             <!-- <ul class="social-icons">
@@ -39,11 +42,38 @@
     <main>
     <!--Hero-->    
     <div class="hero-image">
-    <!-- <div class="hero-text">
-    <h1>Chas Academy - One step closer to a career in IT</h1>
-    <p>Chas Academy is a vocational college that prepares you for a working life in IT. Do you want to join the journey to the world's best industry?<br/><br/></p>
-    <div id="button-root"></div> -->
-  </div>
+      <picture>
+      <source 
+        srcset="
+          img/hero-600.webp 600w,
+          img/hero-900.webp 900w,
+          img/hero-1200.webp 1200w,
+          img/hero-1800.webp 1800w
+        "
+        type="image/webp"
+      />
+      <img 
+        src="img/hero-1200.jpg"
+        srcset="
+          img/hero-600.jpg 600w,
+          img/hero-900.jpg 900w,
+          img/hero-1200.jpg 1200w,
+          img/hero-1800.jpg 1800w
+        "
+        sizes="100vw"
+        alt="Modern sushi platter"
+      />
+    </picture>
+      <div class="hero-text">
+        <h1>Fresh, Authentic, Unforgettable</h1>
+        <p>Experience the art of sushi like never before handcrafted from the finest ingredients, served with passion and precision.
+        <br/><br/></p>
+      <div class="hero-button">
+        <button id="button-root">Menu</button>
+        <button id="button-root">Contact Us</button>
+      </div>
+      </div>
+    </div>
   
   
   
@@ -55,6 +85,7 @@
       <button class="filter-btn" type="button" data-id="Nigiri and Maki">Nigiri and Maki</button>
       <button class="filter-btn" type="button" data-id="Nigiri/ Flambeed Nigiri">Nigiri/ Flambeed Nigiri</button>
       <button class="filter-btn" type="button" data-id="Subete Poke Bowl">Subete Poke Bowl</button>
+      <button class="filter-btn" type="button" data-id="Japanese Hot Dishes">Japanese Hot Dishes</button>
       <button class="filter-btn" type="button" data-id="Special Makimono Rolls">Special Makimono Rolls</button>
       <button class="filter-btn" type="button" data-id="Appetizers">Appetizers</button>
 
@@ -75,7 +106,48 @@
           </div>
         </article>
     </div>
+
+    
     </main>
+    <!--About us-->
+    <section class="about-modern">
+  <div class="about-wrapper">
+
+    <div class="about-img">
+      <img src="img/About us.jpg" alt="Subete Sushi Interior">
+    </div>
+
+    <div class="about-content">
+      <span class="line"></span>
+      <h2>Our Story</h2>
+      <p>
+        At Subete Sushi, we believe sushi 🍣 should be more than just food 🍱— it should be an experience.<br/>
+        Our passion is to bring the clean, delicate flavors of Japanese cuisine to your table, using fresh ingredients and careful craftsmanship in every dish.<br/>
+        From classic rolls to creative signature combinations, each plate is prepared with attention to detail and a deep respect for tradition.<br/>
+        Whether you’re visiting for a quick lunch, a cozy dinner, or a special celebration, we aim to create a warm atmosphere where every guest feels welcome.<br/>
+       Our team is dedicated to quality, hospitality, and authenticity.<br/>
+       We hope you enjoy your time with us as much as we enjoy serving you.<br/>
+       Welcome to a place where freshness meets creativity — welcome to Subete Sushi.
+      </p>
+
+      <div class="about-icons">
+        <div>
+          <h3>🍣 Quality</h3>
+          <p>Premium ingredients delivered daily.</p>
+        </div>
+        <div>
+          <h3>🔪 Craft</h3>
+          <p>Handcrafted by experienced sushi masters.</p>
+        </div>
+        <div>
+          <h3>🌸 Experience</h3>
+          <p>Modern, warm, and authentic atmosphere.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
     <!-- ‌opening hours and map -->
     <div class="map-image-container">
         <!--store image and opening hours-->
@@ -102,7 +174,7 @@
               </div>
               <div class="row">
                <span class="day">Friday</span>
-               <span class="time">12-22</span>
+               <span class="time">12-23</span>
               </div>
               <div class="row">
                <span class="day">Saturday</span>
@@ -110,7 +182,7 @@
               </div>
               <div class="row">
                <span class="day">Sunday</span>
-               <span class="time">14-23</span>
+               <span class="time">14-22</span>
               </div>
             </div>
           </div>

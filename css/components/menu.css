@@ -23,6 +23,9 @@
   box-shadow: var(--clr-grey-14);
   box-shadow: inset;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* min-width: 400px; */
+  width: 100%;  /* اضافه کنید */
+
 }
 .menu-item:hover {
  
@@ -59,29 +62,47 @@
   padding-top: 1rem;
 }
 
+
+/*tablet*/
 @media screen and (min-width: 768px) {
   .menu-item {
     grid-template-columns: 225px 1fr;
     gap: 0 1.25rem;
-    width: 640px;
     max-width: 640px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+
   }
   .photo {
     height: 175px;
   }
 }
+
+
+/*desktop*/
 @media screen and (min-width: 1200px) {
   .section-center {
     width: 95vw;
     grid-template-columns: 1fr 1fr;
+    margin: auto 0;
+    
   }
   .photo {
     height: 150px;
   }
+  
 }
+
+
+
 .btn-container {
-  text-align: center;
   margin-top: 2rem;
+  gap: 10px 10px;
+  flex-wrap: wrap;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .filter-btn {
   background: transparent;

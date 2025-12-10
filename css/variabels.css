@@ -68,4 +68,7 @@
 
   /*font size*/
  --base-font-size: 12px;
+ --font-size-small: 10px;
+ --font-size-medium: 16px;
+ --font-size-large: 24px;
 }
