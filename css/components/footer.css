@@ -27,7 +27,6 @@ footer {
 .links a {
   display: block;
   color: var(--clr-grey-6);
-  opacity: 0.95;
   margin: 0.15rem 0;
 }
 .links a:hover { color: var(--clr-orange-1); }
@@ -35,7 +34,6 @@ footer {
 .contact-us a {
   display: block;
   color: var(--clr-grey-6);
-  opacity: 0.95;
   margin: 0.15rem 0;
 }
 .contact-us a:hover { color: var(--clr-orange-1); }
@@ -43,7 +41,6 @@ footer {
 .social-media a {
   display: block;
   color: var(--clr-grey-6);
-  opacity: 0.95;
   margin: 0.15rem 0;
 }
 .social-media a:hover { color: var(--clr-orange-1); }
@@ -59,6 +56,8 @@ footer {
 .contact-us .phone,
 .contact-us .Address,
 .social-media div {
+  display: flex;
+  align-items: center;
   margin: 0.35rem 0;
   color: var(--clr-grey-6);
 }
