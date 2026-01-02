@@ -4,6 +4,10 @@ import { initGallery } from './components/gallery.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     initNavigation();
-    initMenu();
+
+    // Detect language from URL
+    const isEnglish = window.location.pathname.includes('/en/');
+    initMenu(isEnglish ? 'en' : 'sv');
+
     initGallery();
 });
