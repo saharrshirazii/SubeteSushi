@@ -30,7 +30,23 @@ footer {
   opacity: 0.95;
   margin: 0.15rem 0;
 }
-.links a:hover { color: var(--clr-primary-5); }
+.links a:hover { color: var(--clr-orange-1); }
+
+.contact-us a {
+  display: block;
+  color: var(--clr-grey-6);
+  opacity: 0.95;
+  margin: 0.15rem 0;
+}
+.contact-us a:hover { color: var(--clr-orange-1); }
+
+.social-media a {
+  display: block;
+  color: var(--clr-grey-6);
+  opacity: 0.95;
+  margin: 0.15rem 0;
+}
+.social-media a:hover { color: var(--clr-orange-1); }
 
 .contact-us img,
 .social-media img {

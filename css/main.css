@@ -4,6 +4,8 @@
 @import url("components/menu.css");
 @import url("components/map-store.css");
 @import url("components/footer.css");
+@import url("components/gallery.css");
+
 
 /*---------------------- Global Styles ---------------------*/
 *::before,
@@ -95,12 +97,10 @@ nav {
 .menu-links {
   height: 0;
   overflow: hidden;
-  transition: var(--transition);
+  transition: height 0.3s ease-in-out;
   font-weight: 500;
-   width: 100%;
-     font-size: var(--font-size-medium);
-
-
+  width: 100%;
+  font-size: var(--font-size-medium);
 }
 .menu-links a {
   color: var(--clr-orange-1);
@@ -119,8 +119,32 @@ nav {
     font-size: var(--font-size-medium);
 
 }
+
+/* Language Switcher Link */
+.lang-switcher {
+  background: var(--clr-orange-1) !important;
+  color: var(--clr-white) !important;
+  border: 2px solid var(--clr-orange-1);
+  padding: 0.4rem 1rem !important;
+  font-size: 0.9rem !important;
+  font-weight: 600 !important;
+  letter-spacing: var(--spacing);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: var(--transition);
+  text-transform: uppercase;
+  margin: 0.75rem 1rem;
+  display: inline-block !important;
+  width: fit-content;
+  text-align: center;
+}
+.lang-switcher:hover {
+  background: transparent !important;
+  color: var(--clr-orange-1) !important;
+}
+
 .show-links {
-  height: 11rem;
+  height: 16rem;
 }
 /*desktop*/
 @media screen and (min-width: 768px) {
@@ -160,6 +184,11 @@ nav {
     font-size: 1.05rem;
     font-weight: 500;
 
+  }
+  .lang-switcher {
+    margin: 0 0 0 0.5rem;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
   }
   .logo-img{
     align-items: center;
@@ -256,25 +285,28 @@ nav {
   font-size: 1.2rem;
 }
 
-.hero-text button{
+.hero-text .hero-cta{
   border: solid 2px white;
   background: transparent;
   color: white;
-  width: 100px;
-  height: 40px;
+  min-width: 120px;
+  height: 44px;
   border-radius: 5px;
-  box-shadow: 0  5px 10px rgba(0,0,0,0.4);
-
+  box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  text-transform: uppercase;
 }
 
-.hero-text button:hover{
+.hero-text .hero-cta:hover{
   background:var(--clr-orange-1);
   color: #2B2B2B;
-  width: 100px;
-  height: 40px;
-  border-radius: 5px;
-  border: none;
-  box-shadow: 0  5px 10px rgba(0,0,0,0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.35);
 }
 
 .hero-button{
@@ -328,6 +360,15 @@ nav {
   line-height: 1.8;
   color: #555;
   max-width: 500px;
+}
+
+.about-content a {
+  color: var(--clr-orange-1);
+  font-weight: 600;
+}
+
+.about-content a:hover {
+  text-decoration: underline;
 }
 
 .about-icons {

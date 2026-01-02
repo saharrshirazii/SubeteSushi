@@ -329,7 +329,7 @@ function displayMenuItems(menuItems){
   let displayMenu = menuItems.map(function(item){
     //console.log(item);
     return `<article class="menu-item">
-          <img src=${item.img} alt=${item.title} class="photo" loading="lazy"/>
+          <img src=${item.img} alt="${item.title} - Fresh Japanese sushi from Subete Sushi Göteborg" class="photo" loading="lazy"/>
           <div class="item-info">
             <div>
               <h4>${item.title}</h4>

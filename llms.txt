@@ -1,0 +1,87 @@
+# Subete Sushi
+
+> Fresh, authentic Japanese sushi restaurant in Göteborg, Sweden. Handcrafted sushi, nigiri, maki rolls, and poke bowls at Lisebergsstation.
+
+## About
+
+Subete Sushi is a Japanese restaurant specializing in fresh, handcrafted sushi located in Göteborg, Sweden. We are situated at Lisebergsstation, making us easily accessible by public transport and just a short walk from Liseberg amusement park.
+
+Our menu features traditional Japanese cuisine including:
+- Nigiri and Maki sushi
+- Flambéed (flame-seared) Nigiri
+- Poke Bowls
+- Special Makimono Rolls
+- Japanese Hot Dishes
+- Appetizers
+
+We pride ourselves on using premium, fresh ingredients and traditional Japanese preparation methods.
+
+## Contact Information
+
+- **Website**: https://subetesushi.se
+- **Phone**: +46 31-352 11 10
+- **Address**: Fabriksgatan 60, Lisebergsstation, 412 51 Göteborg, Sweden
+- **GPS Coordinates**: 57.69834, 11.99463
+
+## Opening Hours
+
+| Day | Hours |
+|-----|-------|
+| Monday | Closed |
+| Tuesday | 12:00 - 22:00 |
+| Wednesday | 12:00 - 22:00 |
+| Thursday | 12:00 - 22:00 |
+| Friday | 12:00 - 23:00 |
+| Saturday | 14:00 - 23:00 |
+| Sunday | 14:00 - 22:00 |
+
+## Services
+
+- Dine-in
+- Takeaway
+- Reservations accepted (recommended for weekends)
+
+## Payment Methods
+
+- Cash
+- Credit Cards (Visa, Mastercard)
+- Swish
+
+## Dietary Information
+
+- Vegetarian options available (vegetable maki, vegetarian poke bowls)
+- Please inform staff about food allergies when ordering
+- Menu contains: fish, shellfish, soy, sesame, gluten
+
+## Social Media
+
+- Instagram: https://www.instagram.com/subete_sushi
+- Facebook: https://www.facebook.com/subetesushi/
+
+## Price Range
+
+$$ (Moderate)
+
+## Languages
+
+- Swedish
+- English
+
+## Frequently Asked Questions
+
+### Do you offer takeaway?
+Yes, we offer both dine-in and takeaway. Call 031-3521110 to place your order.
+
+### Do I need a reservation?
+Reservations are recommended for weekends and larger groups. Call 031-3521110 to book.
+
+### Is parking available?
+Street parking is available nearby. We are also easily accessible by tram at Lisebergsstation.
+
+### Do you cater for events?
+Please contact us directly at 031-3521110 for catering inquiries.
+
+## Optional
+
+- Sitemap: https://subetesushi.se/sitemap.xml
+- Robots: https://subetesushi.se/robots.txt
