@@ -20,13 +20,21 @@ export function initMenu(language = null) {
     const isSubdirectory = window.location.pathname.includes('/en/');
     const imgPrefix = isSubdirectory ? '../' : '';
 
-    const displayMenuItems = (items) => {
+    // Lunch info shown above the lunch items
+    const lunchNote = language === 'en'
+        ? `<div class="lunch-note"><h3>Lunch Menu</h3><p>Served daily 12:00 - 15:00</p><p>Add a 330 ml soda (+20 kr) or a miso soup (+20 kr)</p></div>`
+        : `<div class="lunch-note"><h3>Lunchmeny</h3><p>Serveras dagligen: 12:00 - 15:00</p><p>Lägg till en 330 ml burkläsk (+20 kr) eller en misosoppa (+20 kr)</p></div>`;
+
+    // "All" view hides Lunch items (they duplicate regular menu rolls)
+    const regularItems = menuData.filter(item => item.category !== 'Lunch');
+
+    const displayMenuItems = (items, showLunchNote = false) => {
         if (items.length < 1) {
             sectionCenter.innerHTML = `<h3>No items found in this category.</h3>`;
             return;
         }
 
-        sectionCenter.innerHTML = items.map(item => `
+        sectionCenter.innerHTML = (showLunchNote ? lunchNote : '') + items.map(item => `
             <article class="menu-item">
                 <img 
                   src="${imgPrefix}${item.img}" 
@@ -44,7 +52,7 @@ export function initMenu(language = null) {
         `).join("");
     };
 
-    displayMenuItems(menuData);
+    displayMenuItems(regularItems);
 
     filterBtns.forEach(btn => {
         btn.addEventListener("click", (e) => {
@@ -54,12 +62,12 @@ export function initMenu(language = null) {
             e.currentTarget.classList.add('active');
 
             if (category === "all") {
-                displayMenuItems(menuData);
+                displayMenuItems(regularItems);
             } else {
                 const filtered = menuData.filter(
                   item => item.category === category
                 );
-                displayMenuItems(filtered);
+                displayMenuItems(filtered, category === 'Lunch');
             }
         });
     });

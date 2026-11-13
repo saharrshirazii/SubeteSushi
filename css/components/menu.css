@@ -32,6 +32,7 @@
 }
 .photo {
   object-fit: cover;
+  width: 100%;
   height: 200px;
   border: 1px solid var(--clr-grey-13);
   border-radius: var(--radius-small);
@@ -43,7 +44,7 @@
 }
 .item-info {
   text-align: left;
-  padding-left: var(--padding-small);
+  padding: 0;
 }
 .item-info div {
   display: flex;
@@ -83,7 +84,7 @@
   .section-center {
     width: 95vw;
     grid-template-columns: 1fr 1fr;
-    margin: auto 0;
+    margin: 0 auto;
     
   }
   .photo {
@@ -130,5 +131,33 @@
   background-color: var(--clr-orange-1);
   outline: none;
   border: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+/* Lunch info banner (shown above lunch items) */
+.lunch-note {
+  grid-column: 1 / -1;
+  text-align: center;
+  max-width: 40rem;
+}
+.lunch-note h3 {
+  color: var(--clr-orange-1);
+  margin-bottom: 0.5rem;
+}
+
+/* Highlighted Lunch tab (time-limited offer) - matcha green */
+.filter-btn[data-id="Lunch"] {
+  background: #a8c686;
+  color: #3E3F29;
+  font-weight: 600;
+}
+.filter-btn[data-id="Lunch"]:hover {
+  background: #95b872;
+  color: #3E3F29;
+}
+/* Selected Lunch tab looks the same as the other selected tabs (orange) */
+.filter-btn[data-id="Lunch"]:focus,
+.filter-btn[data-id="Lunch"].active {
+  background: var(--clr-orange-1);
+  color: #fff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }

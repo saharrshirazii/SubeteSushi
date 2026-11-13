@@ -279,4 +279,28 @@ export const recipesEn = [
     img: "img/Karaage.jpg",
     desc: `Salmon/ Chicken Skewers/ Beef/ Karaage,  3 pieces of nigiri, Rice, Salad mix with dressing`
   },
+  {
+    id: 34,
+    title: "Volcano Fried Roll",
+    category: "Lunch",
+    price: 140,
+    img: "img/VolcanoFriedRoll.jpg",
+    desc: `Cucumber, Salad, Spring onion, Avocado, Spicy salmon, Chili mayonnaise`
+  },
+  {
+    id: 35,
+    title: "Philadelphia Roll",
+    category: "Lunch",
+    price: 140,
+    img: "img/PhiladephiaRoll.jpg",
+    desc: `Avocado, Cucumber, Salad, Lightly seared salmon on top, Cream cheese`
+  },
+  {
+    id: 36,
+    title: "Tempura Roll",
+    category: "Lunch",
+    price: 140,
+    img: "img/TempuraRoll.jpg",
+    desc: `Avocado, Cucumber, Chives, Salad, Fried shrimp`
+  }
 ]

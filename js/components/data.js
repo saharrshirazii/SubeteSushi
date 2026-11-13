@@ -262,5 +262,29 @@ export const recipes = [
     price: 190,
     img: "img/Karaage.jpg",
     desc: `Lax / kycklingspett / nötkött / karaage, 3 bitar nigiri, ris, sallad med dressing`
+  },
+  {
+    id: 34,
+    title: "Volcano friterad rulle",
+    category: "Lunch",
+    price: 140,
+    img: "img/VolcanoFriedRoll.jpg",
+    desc: `Gurka, sallad, salladslök, avokado, stark lax, chilimajonnäs`
+  },
+  {
+    id: 35,
+    title: "Philadelphia-rulle",
+    category: "Lunch",
+    price: 140,
+    img: "img/PhiladephiaRoll.jpg",
+    desc: `Avokado, gurka, sallad, lätt halstrad lax på toppen, färskost`
+  },
+  {
+    id: 36,
+    title: "Tempura-rulle",
+    category: "Lunch",
+    price: 140,
+    img: "img/TempuraRoll.jpg",
+    desc: `Avokado, gurka, salladslök, sallad, friterad räka`
   }
 ]
